@@ -1,0 +1,34 @@
+2019-09-14 19:03:14,927 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2019-09-14 19:03:14,930 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
+2019-09-14 19:03:14,933 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
+2019-09-14 19:03:15,157 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-10 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 19:03:15,198 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-10 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 19:03:15,205 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 19:03:15,217 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
+2019-09-14 19:03:15,745 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 19:03:15,750 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
+2019-09-14 19:03:15,755 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
+2019-09-14 19:03:15,762 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
+2019-09-14 19:03:16,082 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 19:03:16,109 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-12 - originCheck: originValue = http://localhost:9000
+2019-09-14 19:03:16,115 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-9 - Creating user actor userActor-8 with default stocks List(GOOG, AAPL, COX)
+2019-09-14 19:03:16,166 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(GOOG)
+2019-09-14 19:03:16,195 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(AAPL)
+2019-09-14 19:03:16,199 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-7 - Adding stock Stock(COX)
+2019-09-14 19:04:31,239 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-11 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58879 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 19:04:31,770 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58881 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 19:04:31,770 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58880 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 19:04:31,778 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-12 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58882 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 19:04:31,778 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-12 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58883 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
