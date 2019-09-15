@@ -32,7 +32,7 @@ class UserActor @Inject()(@Assisted id: String, @Named("stocksActor") stocksActo
   private val marker = LogMarker(name = self.path.name)
   implicit val log: MarkerLoggingAdapter = akka.event.Logging.withMarker(context.system, this.getClass)
 
-  implicit val timeout = Timeout(50.millis)
+  implicit val timeout = Timeout(250.millis)
 
   val (hubSink, hubSource) = MergeHub.source[JsValue](perProducerBufferSize = 16)
     .toMat(BroadcastHub.sink(bufferSize = 256))(Keep.both)
@@ -118,7 +118,7 @@ class UserActor @Inject()(@Assisted id: String, @Named("stocksActor") stocksActo
     val killswitchFlow: Flow[JsValue, JsValue, UniqueKillSwitch] = {
       Flow.apply[JsValue]
         .joinMat(KillSwitches.singleBidi[JsValue, JsValue])(Keep.right)
-        .backpressureTimeout(1.seconds)
+        .backpressureTimeout(5.seconds)
     }
 
     // Set up a complete runnable graph from the stock source to the hub's sink

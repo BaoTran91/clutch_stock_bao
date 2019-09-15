@@ -1,7 +1,7 @@
-2019-09-14 19:03:14,927 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
-2019-09-14 19:03:14,930 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
-2019-09-14 19:03:14,933 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
-2019-09-14 19:03:15,157 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-10 - Using the following cache configuration for assets:
+2019-09-14 20:54:43,919 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2019-09-14 20:54:43,921 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - logger log1-Slf4jLogger started
+2019-09-14 20:54:43,923 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - Default Loggers started
+2019-09-14 20:54:44,118 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-6 - Using the following cache configuration for assets:
 	 enableCaching = false
 	 enableCacheControl = false
 	 defaultCacheControl = public, max-age=3600
@@ -9,26 +9,577 @@
 	 configuredCacheControl:
 
 
-2019-09-14 19:03:15,198 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-10 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
-2019-09-14 19:03:15,205 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-09-14 20:54:44,142 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-6 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 20:54:44,147 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-09-14 19:03:15,217 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
-2019-09-14 19:03:15,745 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
-2019-09-14 19:03:15,750 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
-2019-09-14 19:03:15,755 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
-2019-09-14 19:03:15,762 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
-2019-09-14 19:03:16,082 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
-2019-09-14 19:03:16,109 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-12 - originCheck: originValue = http://localhost:9000
-2019-09-14 19:03:16,115 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-9 - Creating user actor userActor-8 with default stocks List(GOOG, AAPL, COX)
-2019-09-14 19:03:16,166 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(GOOG)
-2019-09-14 19:03:16,195 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(AAPL)
-2019-09-14 19:03:16,199 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-7 - Adding stock Stock(COX)
-2019-09-14 19:04:31,239 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-11 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58879 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
-2019-09-14 19:04:31,770 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58881 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
-2019-09-14 19:04:31,770 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58880 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
-2019-09-14 19:04:31,778 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-12 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58882 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
-2019-09-14 19:04:31,778 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-12 - Aborting tcp connection to /0:0:0:0:0:0:0:1:58883 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:54:44,155 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev) (no global state)
+2019-09-14 20:54:44,825 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 20:54:44,830 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-8 - New connection accepted
+2019-09-14 20:54:44,835 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-10 - New connection accepted
+2019-09-14 20:54:44,841 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 20:54:45,357 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-2 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:45,358 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-2 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:45,358 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-2 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:45,360 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-10 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:45,362 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-6 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:45,522 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 20:54:45,563 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-10 - originCheck: originValue = http://localhost:9000
+2019-09-14 20:54:45,568 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-6 - Creating user actor userActor-7 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 20:54:45,609 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-8 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=ORCL
+2019-09-14 20:54:45,795 [DEBUG] from akka.stream.impl.io.InputStreamPublisher in play-dev-mode-akka.actor.default-dispatcher-9 - No more bytes available to read (got `-1` from `read`)
+2019-09-14 20:54:46,020 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-8 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 20:54:46,131 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-8 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BABA
+2019-09-14 20:54:46,258 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-8 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 20:54:46,323 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-8 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 20:54:46,454 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-8 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.HashSet.map(HashSet.scala:36)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 20:55:10,740 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-7 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 20:55:16,073 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-7 - Adding stock Stock(GOOG)
+2019-09-14 20:55:22,213 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=CRON
+2019-09-14 20:55:28,566 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-4 - Adding stock Stock(CRON)
+2019-09-14 20:56:00,652 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49474 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:56:00,840 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-3 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49477 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:56:00,849 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49479 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:56:00,849 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-8 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49478 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:56:00,859 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49480 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:56:31,667 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
+2019-09-14 20:56:31,734 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
+2019-09-14 20:56:37,041 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 20:56:37,041 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 20:56:37,042 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 20:56:37,042 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 20:56:37,055 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 20:56:37,056 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 20:56:37,061 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-13 - Stopping actor Actor[akka://application/user/userParentActor/userActor-7#143601351]
+2019-09-14 20:56:37,066 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-11 - shutting down: StandardOutLogger
+2019-09-14 20:56:37,301 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2019-09-14 20:56:37,302 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - logger log1-Slf4jLogger started
+2019-09-14 20:56:37,303 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - Default Loggers started
+2019-09-14 20:56:37,379 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-6 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 20:56:37,384 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-6 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 20:56:37,385 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 20:56:37,387 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev) (no global state)
+2019-09-14 20:56:37,441 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
+2019-09-14 20:56:37,455 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
+2019-09-14 20:56:37,459 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-10 - New connection accepted
+2019-09-14 20:56:37,658 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-11 - New connection accepted
+2019-09-14 20:56:37,668 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-6 - originCheck: originValue = http://localhost:9000
+2019-09-14 20:56:37,671 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-7 - Creating user actor userActor-15 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 20:56:37,691 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-3 - Adding stock Stock(KO)
+2019-09-14 20:56:37,697 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-3 - Adding stock Stock(AAPL)
+2019-09-14 20:56:37,701 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(BABA)
+2019-09-14 20:56:37,703 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(COX)
+2019-09-14 20:56:37,728 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(ORCL)
+2019-09-14 20:56:37,728 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(GOOG)
+2019-09-14 20:57:52,687 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-3 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49490 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:57:52,687 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-3 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49489 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:57:53,466 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49493 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:57:53,475 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49494 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 20:57:53,476 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49495 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:15:40,049 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:15:40,125 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:15:45,172 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 21:15:45,172 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 21:15:45,172 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 21:15:45,172 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 21:15:45,173 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 21:15:45,173 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 21:15:45,173 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 21:15:45,173 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 21:15:45,173 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 21:15:45,174 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 21:15:45,174 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 21:15:45,174 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 21:15:45,175 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-2 - Stopping actor Actor[akka://application/user/userParentActor/userActor-15#1847816916]
+2019-09-14 21:15:45,178 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - shutting down: StandardOutLogger
+2019-09-14 21:15:45,401 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2019-09-14 21:15:45,403 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - logger log1-Slf4jLogger started
+2019-09-14 21:15:45,403 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - Default Loggers started
+2019-09-14 21:15:45,457 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-3 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 21:15:45,462 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-3 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 21:15:45,462 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 21:15:45,466 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev) (no global state)
+2019-09-14 21:15:45,538 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:15:45,550 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:15:45,558 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-7 - New connection accepted
+2019-09-14 21:15:45,727 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-11 - New connection accepted
+2019-09-14 21:15:45,737 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-11 - originCheck: originValue = http://localhost:9000
+2019-09-14 21:15:45,740 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-9 - Creating user actor userActor-22 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 21:15:45,750 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-3 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=ORCL
+2019-09-14 21:15:46,005 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-3 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:15:46,098 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-3 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BABA
+2019-09-14 21:15:46,196 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-3 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 21:15:46,284 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-3 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:15:46,404 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-9 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.HashSet.map(HashSet.scala:36)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:15:54,082 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=CRON
+2019-09-14 21:15:54,275 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-6 - Adding stock Stock(CRON)
+2019-09-14 21:15:59,344 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:15:59,406 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(GOOG)
+2019-09-14 21:16:09,674 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=YAH
+2019-09-14 21:16:09,739 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-8 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.Set$Set1.map(Set.scala:135)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:16:16,546 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=SAP
+2019-09-14 21:16:16,614 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(SAP)
+2019-09-14 21:16:26,394 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:16:29,154 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-2 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+2019-09-14 21:16:29,204 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-2 - Adding stock Stock(AAPL)
+2019-09-14 21:17:01,068 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49592 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:17:01,068 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49593 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:17:01,569 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-11 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49595 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:17:01,571 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-11 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49596 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:17:01,576 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49597 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:21:42,415 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:21:42,419 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-10 - New connection accepted
+2019-09-14 21:21:46,960 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 21:21:46,960 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 21:21:46,961 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 21:21:46,961 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 21:21:46,962 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-11 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 21:21:46,964 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-10 - Stopping actor Actor[akka://application/user/userParentActor/userActor-22#-135361905]
+2019-09-14 21:21:46,971 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-6 - shutting down: StandardOutLogger
+2019-09-14 21:21:47,162 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2019-09-14 21:21:47,164 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
+2019-09-14 21:21:47,164 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
+2019-09-14 21:21:47,213 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-11 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 21:21:47,218 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-11 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 21:21:47,219 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-11 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 21:21:47,222 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-11 - Application started (Dev) (no global state)
+2019-09-14 21:21:47,280 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-10 - New connection accepted
+2019-09-14 21:21:47,294 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-3 - New connection accepted
+2019-09-14 21:21:47,302 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:21:47,421 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-11 - New connection accepted
+2019-09-14 21:21:47,430 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-8 - originCheck: originValue = http://localhost:9000
+2019-09-14 21:21:47,434 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-4 - Creating user actor userActor-29 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 21:21:47,442 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=ORCL
+2019-09-14 21:21:47,577 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:21:47,686 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BABA
+2019-09-14 21:21:47,814 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 21:21:47,981 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-6 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:21:48,075 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-5 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.HashSet.map(HashSet.scala:36)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:22:27,071 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 21:22:27,071 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 21:22:27,071 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 21:22:27,071 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 21:22:27,072 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 21:22:27,072 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 21:22:27,072 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 21:22:27,073 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 21:22:27,073 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 21:22:27,073 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 21:22:27,073 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 21:22:27,073 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 21:22:27,074 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-3 - Stopping actor Actor[akka://application/user/userParentActor/userActor-29#-1550355420]
+2019-09-14 21:22:27,076 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - shutting down: StandardOutLogger
+2019-09-14 21:22:27,240 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2019-09-14 21:22:27,241 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
+2019-09-14 21:22:27,241 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
+2019-09-14 21:22:27,286 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-10 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 21:22:27,291 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-10 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 21:22:27,291 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 21:22:27,294 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
+2019-09-14 21:22:27,466 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-3 - New connection accepted
+2019-09-14 21:22:27,474 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-3 - originCheck: originValue = http://localhost:9000
+2019-09-14 21:22:27,476 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-8 - Creating user actor userActor-36 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 21:22:27,488 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-8 - Adding stock Stock(ORCL)
+2019-09-14 21:22:27,491 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-8 - Adding stock Stock(AAPL)
+2019-09-14 21:22:27,493 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-8 - Adding stock Stock(KO)
+2019-09-14 21:22:27,495 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-4 - Adding stock Stock(GOOG)
+2019-09-14 21:22:27,498 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-4 - Adding stock Stock(COX)
+2019-09-14 21:22:27,500 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-2 - Adding stock Stock(BABA)
+2019-09-14 21:23:42,426 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-2 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49631 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:23:42,437 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-2 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49632 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:23:43,306 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-3 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49633 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:23:43,317 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-9 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49634 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:23:43,318 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-9 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49635 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:24:23,180 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
+2019-09-14 21:24:23,183 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:24:26,854 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 21:24:26,855 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 21:24:26,856 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 21:24:26,856 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 21:24:26,856 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 21:24:26,856 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 21:24:26,858 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-7 - Stopping actor Actor[akka://application/user/userParentActor/userActor-36#-69215474]
+2019-09-14 21:24:26,861 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-5 - shutting down: StandardOutLogger
+2019-09-14 21:24:27,028 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2019-09-14 21:24:27,029 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-5 - logger log1-Slf4jLogger started
+2019-09-14 21:24:27,029 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-5 - Default Loggers started
+2019-09-14 21:24:27,066 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-3 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 21:24:27,071 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-3 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 21:24:27,072 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 21:24:27,074 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev) (no global state)
+2019-09-14 21:24:27,117 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:24:27,126 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-9 - New connection accepted
+2019-09-14 21:24:27,140 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:24:27,273 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:24:27,281 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-3 - originCheck: originValue = http://localhost:9000
+2019-09-14 21:24:27,284 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-3 - Creating user actor userActor-43 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 21:24:27,290 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=ORCL
+2019-09-14 21:24:27,432 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:24:27,576 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BABA
+2019-09-14 21:24:27,651 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 21:24:27,792 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:24:27,856 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-5 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.HashSet.map(HashSet.scala:36)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:24:31,258 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:24:31,315 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-4 - Adding stock Stock(GOOG)
+2019-09-14 21:24:37,215 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL
+2019-09-14 21:24:37,275 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(AAPL)
+2019-09-14 21:24:47,152 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=CRON
+2019-09-14 21:24:47,337 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-4 - Adding stock Stock(CRON)
+2019-09-14 21:25:42,193 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49648 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:25:42,193 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49647 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:25:43,135 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-9 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49649 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:25:43,154 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-10 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49650 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:25:48,174 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-3 - New connection accepted
+2019-09-14 21:25:51,792 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [before-service-unbind] with [0] tasks
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [service-unbind] with [0] tasks
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [service-requests-done] with [0] tasks
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [service-stop] with [1] tasks: [application-lifecycle-stophook]
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [before-cluster-shutdown] with [0] tasks
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [cluster-sharding-shutdown-region] with [0] tasks
+2019-09-14 21:25:51,793 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [cluster-leave] with [0] tasks
+2019-09-14 21:25:51,794 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [cluster-exiting] with [0] tasks
+2019-09-14 21:25:51,794 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [cluster-exiting-done] with [0] tasks
+2019-09-14 21:25:51,794 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [cluster-shutdown] with [0] tasks
+2019-09-14 21:25:51,794 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [before-actor-system-terminate] with [1] tasks: [force-reload]
+2019-09-14 21:25:51,794 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-5 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2019-09-14 21:25:51,796 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Stopping actor Actor[akka://application/user/userParentActor/userActor-43#-811527399]
+2019-09-14 21:25:51,800 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-6 - shutting down: StandardOutLogger
+2019-09-14 21:25:51,954 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2019-09-14 21:25:51,955 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - logger log1-Slf4jLogger started
+2019-09-14 21:25:51,955 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - Default Loggers started
+2019-09-14 21:25:51,994 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-6 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-09-14 21:25:51,998 [WARN] from play.filters.headers.SecurityHeadersConfig in play-dev-mode-akka.actor.default-dispatcher-6 - play.filters.headers.contentSecurityPolicy is deprecated in 2.7.0.  Please use play.filters.csp.CSPFilter instead.
+2019-09-14 21:25:51,999 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-09-14 21:25:52,002 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev) (no global state)
+2019-09-14 21:25:52,051 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-8 - New connection accepted
+2019-09-14 21:25:52,060 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-2 - New connection accepted
+2019-09-14 21:25:52,065 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-8 - New connection accepted
+2019-09-14 21:25:52,195 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-6 - New connection accepted
+2019-09-14 21:25:52,201 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-6 - originCheck: originValue = http://localhost:9000
+2019-09-14 21:25:52,203 [INFO] from actors.UserParentActor in application-akka.actor.default-dispatcher-5 - Creating user actor userActor-51 with default stocks List(GOOG, BABA, AAPL, ORCL, COX, KO)
+2019-09-14 21:25:52,210 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=ORCL
+2019-09-14 21:25:52,372 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOG
+2019-09-14 21:25:52,434 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=BABA
+2019-09-14 21:25:52,562 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 21:25:52,729 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:25:52,877 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-8 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.HashSet.map(HashSet.scala:36)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:25:55,517 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-4 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=CRON
+2019-09-14 21:25:55,626 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(CRON)
+2019-09-14 21:26:00,586 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=APX
+2019-09-14 21:26:00,735 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-4 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.Set$Set1.map(Set.scala:135)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:26:01,954 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=AXP
+2019-09-14 21:26:02,065 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(AXP)
+2019-09-14 21:26:05,682 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-9 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:26:05,726 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-9 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.Set$Set1.map(Set.scala:135)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:26:10,994 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=COX
+2019-09-14 21:26:11,057 [ERROR] from akka.actor.OneForOneStrategy in application-akka.actor.default-dispatcher-2 - null
+java.lang.NullPointerException: null
+	at stocks.APIStockQuoteGenerator.<init>(Stock.scala:62)
+	at stocks.Stock.<init>(Stock.scala:15)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$2(StocksActor.scala:21)
+	at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:384)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1(StocksActor.scala:21)
+	at actors.StocksActor$$anonfun$receive$1.$anonfun$applyOrElse$1$adapted(StocksActor.scala:21)
+	at scala.collection.StrictOptimizedIterableOps.map(StrictOptimizedIterableOps.scala:100)
+	at scala.collection.StrictOptimizedIterableOps.map$(StrictOptimizedIterableOps.scala:87)
+	at scala.collection.immutable.Set$Set1.map(Set.scala:135)
+	at actors.StocksActor$$anonfun$receive$1.applyOrElse(StocksActor.scala:21)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at actors.StocksActor.aroundReceive(StocksActor.scala:13)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-09-14 21:26:30,870 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-2 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=DODGX
+2019-09-14 21:26:30,972 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-2 - Adding stock Stock(DODGX)
+2019-09-14 21:26:45,830 [INFO] from yahoofinance.quotes.query1v7.QuotesRequest in application-akka.actor.default-dispatcher-5 - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=KO
+2019-09-14 21:26:46,032 [INFO] from actors.UserActor in application-akka.actor.default-dispatcher-5 - Adding stock Stock(KO)
+2019-09-14 21:27:07,153 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-6 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49651 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:27:07,192 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-2 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49661 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:27:08,071 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-6 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49662 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:27:08,080 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-6 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49663 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.
+2019-09-14 21:27:08,091 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-7 - Aborting tcp connection to /0:0:0:0:0:0:0:1:49664 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75 seconds. This is configurable by akka.http.[server|client].idle-timeout.

@@ -33,15 +33,15 @@ getChartOptions = (data) ->
     show: false
 
 getAxisMin = (data) ->
-  Math.min.apply(Math, data) * 0.95
+  Math.min.apply(Math, data) - 2
 
 getAxisMax = (data) ->
-  Math.max.apply(Math, data) * 1.05
+  Math.max.apply(Math, data) + 2
 
 populateStockHistory = (message) ->
   chart = $("<div>").addClass("chart").prop("id", message.symbol)
   chartHolder = $("<div>").addClass("chart-holder").append(chart)
-  chartHolder.append($("<p>").text("Regular Market Price"+message.symbol))
+  chartHolder.append($("<p>").text("Regular Market Price -  "+message.symbol))
   detailsHolder = $("<div>").addClass("details-holder")
   flipper = $("<div>").addClass("flipper").append(chartHolder).append(detailsHolder).attr("data-content", message.symbol)
   flipContainer = $("<div>").addClass("flip-container").append(flipper).click (event) ->

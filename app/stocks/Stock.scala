@@ -16,7 +16,7 @@ class Stock(val symbol: StockSymbol) {
 
   private val source: Source[StockQuote, NotUsed] = {
     Source.unfold(stockQuoteGenerator.seed) { (last: StockQuote) =>
-      val next = stockQuoteGenerator.newQuote(last)
+      val next = stockQuoteGenerator.seed//.newQuote(last)
       Some(next, next)
     }
   }       //create get price of symbol in Source
@@ -29,11 +29,11 @@ class Stock(val symbol: StockSymbol) {
   } //create json array of symbol and price history
 
   /**
-   * Provides a source that returns a stock quote every 75 milliseconds.
+   * Provides a source that returns a stock quote every 500 milliseconds.
    */
   def update: Source[StockUpdate, NotUsed] = {
     source
-      .throttle(elements = 1, per = 75.millis, maximumBurst = 1, ThrottleMode.shaping)
+      .throttle(elements = 1, per = 300.millis, maximumBurst = 1, ThrottleMode.shaping)
       .map(sq => new StockUpdate(sq.symbol, sq.price))
   }
 
@@ -45,32 +45,33 @@ class Stock(val symbol: StockSymbol) {
  */
 trait StockQuoteGenerator {
   def seed: StockQuote
-  def newQuote(lastQuote: StockQuote): StockQuote
+  //def newQuote(lastQuote: StockQuote): StockQuote
 }
 
 /**
  * inherit the trait StockQuoteGenerator
  * init with StockSymbol which is a String ex: APPL
  * there are two methods - seed -> first price & newQuote -> price after Both output StockQuote(symbol: StockSymbol, price: StockPrice)
- *
+ * newQuote is only for testing
  * This is probably better done through configuration same as the allowedhosts filter.
  */
 class APIStockQuoteGenerator(symbol: StockSymbol) extends StockQuoteGenerator {
-  private def random: Double = scala.util.Random.nextDouble
-  //val stockName: String = symbol.toString.toLowerCase()
-  //val stock: YahooStock = YahooFinance.get(stockName)
-  //val stockPriceAPI: Double = stock.getQuote.getPrice.doubleValue()
+  //private def random: Double = scala.util.Random.nextDouble
+  val stockName: String = symbol.toString
+  val stock: YahooStock = YahooFinance.get(stockName)
+  val stockPriceAPI: Double = stock.getQuote.getPrice.doubleValue()
 
 
   def seed: StockQuote = {
-    //StockQuote(symbol, StockPrice(stockPriceAPI))
-    StockQuote(symbol, StockPrice(random * 800))
+    StockQuote(symbol, StockPrice(stockPriceAPI))
+    //StockQuote(symbol, StockPrice(random * 800))
   }
-
+/*
   def newQuote(lastQuote: StockQuote): StockQuote = {
     //StockQuote(symbol, StockPrice(stockPriceAPI))
     StockQuote(symbol, StockPrice(lastQuote.price.raw * (0.95 + (0.1 * random))))
   }
+ */
 }
 
 case class StockQuote(symbol: StockSymbol, price: StockPrice)
