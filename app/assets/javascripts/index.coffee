@@ -33,10 +33,10 @@ getChartOptions = (data) ->
     show: false
 
 getAxisMin = (data) ->
-  Math.min.apply(Math, data) - 2
+  Math.min.apply(Math, data) - 1
 
 getAxisMax = (data) ->
-  Math.max.apply(Math, data) + 2
+  Math.max.apply(Math, data) + 1
 
 populateStockHistory = (message) ->
   chart = $("<div>").addClass("chart").prop("id", message.symbol)

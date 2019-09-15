@@ -3,9 +3,15 @@
 The requirement was to build a web app for displaying stock quotes in real time using the Yahoo finance api to get the stock quotes. Server implementation using Play Framework in Scala. Must use a WebSocket to push the updated quotes in real time to the browser. The design of the UI must update in real time as quotes come in.
 
 ## run procedure
+###build
 1) download sbt if needed.
 2) open up command line tool and navigate to into the project's root directory where build.sbt reside.
 3) run './sbt run'
+---
+1) Alternatively - project can be built in InteliJ or Other IDEA
+2) enter 'run' in **sbt shell** or 'sbt run' in **Terminal** of InteliJ  
+---
+###UI
 4) log into http://localhost:9000 
 5) Enter Stock symbol such as 'GOOG' on label on top right and press 'ADD STOCK' button. 
 
