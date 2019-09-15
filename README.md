@@ -7,7 +7,7 @@ The requirement was to build a web app for displaying stock quotes in real time 
 2) open up command line tool and navigate to into the project's root directory where build.sbt reside.
 3) run './sbt run'
 4) log into http://localhost:9000 
-5) Enter Stock symbol such as 'AMEX' on label on top right and press 'ADD STOCK' button. 
+5) Enter Stock symbol such as 'GOOG' on label on top right and press 'ADD STOCK' button. 
 
 ## Information from the starter project "play-scala-websocket-example"
 
