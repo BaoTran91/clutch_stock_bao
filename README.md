@@ -7,11 +7,13 @@ The requirement was to build a web app for displaying stock quotes in real time 
 1) download sbt if needed.
 2) open up command line tool and navigate to into the project's root directory where build.sbt reside.
 3) run './sbt run'
+
 ---
 1) Alternatively - project can be built in InteliJ or Other IDEA
 2) enter 'run' in **sbt shell** or 'sbt run' in **Terminal** of InteliJ  
 ---
 ###UI
+
 4) log into http://localhost:9000 
 5) Enter Stock symbol such as 'GOOG' on label on top right and press 'ADD STOCK' button. 
 
