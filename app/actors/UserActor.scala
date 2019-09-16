@@ -32,7 +32,7 @@ class UserActor @Inject()(@Assisted id: String, @Named("stocksActor") stocksActo
   private val marker = LogMarker(name = self.path.name)
   implicit val log: MarkerLoggingAdapter = akka.event.Logging.withMarker(context.system, this.getClass)
 
-  implicit val timeout = Timeout(250.millis)
+  implicit val timeout = Timeout(80.millis)
 
   val (hubSink, hubSource) = MergeHub.source[JsValue](perProducerBufferSize = 16)
     .toMat(BroadcastHub.sink(bufferSize = 256))(Keep.both)

@@ -29,11 +29,11 @@ class Stock(val symbol: StockSymbol) {
   } //create json array of symbol and price history
 
   /**
-   * Provides a source that returns a stock quote every 500 milliseconds.
+   * Provides a source that returns a stock quote every 100 milliseconds.
    */
   def update: Source[StockUpdate, NotUsed] = {
     source
-      .throttle(elements = 1, per = 300.millis, maximumBurst = 1, ThrottleMode.shaping)
+      .throttle(elements = 1, per = 100.millis, maximumBurst = 1, ThrottleMode.shaping)
       .map(sq => new StockUpdate(sq.symbol, sq.price))
   }
 
@@ -57,21 +57,24 @@ trait StockQuoteGenerator {
  */
 class APIStockQuoteGenerator(symbol: StockSymbol) extends StockQuoteGenerator {
   //private def random: Double = scala.util.Random.nextDouble
-  val stockName: String = symbol.toString
-  val stock: YahooStock = YahooFinance.get(stockName)
-  val stockPriceAPI: Double = stock.getQuote.getPrice.doubleValue()
 
 
   def seed: StockQuote = {
+    val stockName: String = symbol.toString
+    val stock: YahooStock = YahooFinance.get(stockName)
+    val stockPriceAPI: Double = stock.getQuote.getPrice.doubleValue()
     StockQuote(symbol, StockPrice(stockPriceAPI))
     //StockQuote(symbol, StockPrice(random * 800))
   }
 /*
   def newQuote(lastQuote: StockQuote): StockQuote = {
-    //StockQuote(symbol, StockPrice(stockPriceAPI))
-    StockQuote(symbol, StockPrice(lastQuote.price.raw * (0.95 + (0.1 * random))))
+    val stockName: String = symbol.toString
+    val stock: YahooStock = YahooFinance.get(stockName)
+    val stockPriceAPI: Double = stock.getQuote.getPrice.doubleValue()
+    StockQuote(symbol, StockPrice(stockPriceAPI))
+    //StockQuote(symbol, StockPrice(lastQuote.price.raw * (0.95 + (0.1 * random))))
   }
- */
+*/
 }
 
 case class StockQuote(symbol: StockSymbol, price: StockPrice)
