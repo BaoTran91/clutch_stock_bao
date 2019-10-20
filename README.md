@@ -1,4 +1,4 @@
-# Bao Tran - Clutch Coding Assignment 
+# Bao Tran - Play Framework Web App
 
 The requirement was to build a web app for displaying stock quotes in real time using the Yahoo finance api to get the stock quotes. Server implementation using Play Framework in Scala. Must use a WebSocket to push the updated quotes in real time to the browser. The design of the UI must update in real time as quotes come in.
 
